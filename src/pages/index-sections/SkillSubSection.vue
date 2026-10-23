@@ -45,6 +45,9 @@
     'JavaScript',
     'TypeScript',
     'Node.js',
+    'Grafana',
+    'Prometheus',
+    'LLM Integration',
   ]
 
   const previouslyUsed = [

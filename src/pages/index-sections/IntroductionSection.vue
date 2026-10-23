@@ -7,18 +7,18 @@
     <div class="introduction-grid">
       <div>
         <p>
-          I'm a backend software engineer with 10 years of experience designing, building, and scaling distributed systems and cloud-native applications across industrial SaaS, healthcare, and e-commerce.
+          I'm a backend software engineer with 10 years of experience designing, building, and scaling distributed systems and cloud-native applications across the industrial SaaS, healthcare, and e-commerce industries.
         </p>
 
         <p>
-          My experience includes system architecture, performance optimization, production infrastructure, and modernizing complex services. I've built systems handling millions of requests per day, improved database performance while reducing infrastructure costs, and developed integrations with external platforms and industry standards.
+          I've built systems handling millions of requests per day, improved database performance while reducing infrastructure costs, and developed integrations with external platforms and industry standards.
         </p>
 
         <p>
-          I primarily work with Go, TypeScript/Node.js, PostgreSQL, Kubernetes, and AWS/GCP. I've also led engineering teams, most recently managing an 11-person engineering organization. While I enjoy technical leadership and mentoring, my primary interests are hands-on development, system architecture, and solving complex backend problems.
+          I primarily work with Go, TypeScript/Node.js, PostgreSQL, Kubernetes, and AWS. I've also led engineering teams, most recently managing an 11-person engineering organization. While I enjoy technical leadership and mentoring, my primary interests are hands-on development, system architecture, and solving complex backend problems.
         </p>
 
-        <p>I'm a US citizen based in Seoul, South Korea (UTC+9), with an F-2 visa, so no employer visa sponsorship is required for work in Korea. I'm interested in Senior/Staff Backend Engineer and hands-on Technical Lead opportunities with English-speaking teams in Korea, as well as international remote roles across Asia and Europe that support working from South Korea.</p>
+        <p>I'm a US citizen based in Seoul, South Korea (UTC+9), with an F-2 visa, so no visa sponsorship is required for work in Korea. I'm interested in backend or full-stack engineering or hands-on technical lead opportunities with English-speaking teams in Korea, as well as international remote roles across Asia and Europe that support working from South Korea.</p>
 
         <skill-sub-section />
       </div>
