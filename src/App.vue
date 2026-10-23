@@ -40,13 +40,14 @@
     </v-app-bar>
 
     <v-main>
-      <router-view />
+      <HomePage />
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts" setup>
   import { useDisplay } from 'vuetify'
+  import HomePage from '@/pages/index.vue'
 
   const { smAndUp } = useDisplay()
   const resumeUrl = `${import.meta.env.BASE_URL}James%20Jensen%20Resume.pdf`
