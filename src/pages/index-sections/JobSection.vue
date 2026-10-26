@@ -10,16 +10,27 @@
               {{ job.company }}
             </span>
 
-            <span class="text-subtitle-subsection inline-spacing">
-              {{ job.title }}
-            </span>
-
             <span
               class="text-subtitle-subsection"
               :style="{ fontStyle: 'italic' }"
             >
               {{ job.dateRange }}
             </span>
+          </template>
+
+          <template v-for="(role) in job.roles" :key="role.title">
+            <div class="pl-2">
+              <span class="text-subtitle-subsection inline-spacing">
+                {{ role.title }}
+              </span>
+
+              <span
+                class="text-subtitle-subsection"
+                :style="{ fontStyle: 'italic' }"
+              >
+                {{ role.dateRange }}
+              </span>
+            </div>
           </template>
 
           <div class="content-stack">
@@ -84,11 +95,16 @@
   type Job = {
     company: string
     description: string
-    title: string
+    roles: Role[]
     dateRange: string
     imageUrl?: string
     skills: string[]
     projects: Project[]
+  }
+
+  type Role = {
+    title: string
+    dateRange: string
   }
 
   function projectGroups (projects: Project[]) {
@@ -107,8 +123,15 @@
   const jobs: Job[] = [
     {
       company: 'Glassdome, Inc.',
-      title: 'Head of Backend Software Engineering',
       dateRange: 'Oct 2024 - Present',
+      roles: [{
+
+        title: 'Head of Backend Software Engineering',
+        dateRange: 'July 2026 - Present',
+      }, {
+        title: 'Mid-Level Backend Software Engineer',
+        dateRange: 'Oct 2024 - July 2026',
+      }],
       description:
         'Seoul, South Korea. Glassdome builds industrial SaaS for manufacturing monitoring and product carbon footprints. Designed and developed Go backend systems, carbon footprint products, data-exchange integrations, access controls, and customer-facing APIs. Improved time-series query performance and database costs, and maintained production Kubernetes infrastructure on AWS with over 99.99% reported uptime over the past year. Assumed engineering leadership following the Director of Engineering’s departure, managing an 11-person engineering organization and reporting to the CEO. Owned roadmaps and delivery, working with domain experts, product, and design to translate complex requirements into technical designs and prioritized work.',
       skills: [
@@ -231,8 +254,16 @@
     },
     {
       company: 'MXN Technology',
-      title: 'Lead Software Engineer',
       dateRange: 'Sep 2021 - Oct 2024',
+      roles: [{
+
+                title: 'Lead Software Engineer',
+                dateRange: 'Aug 2022 - Oct 2024',
+              },
+              {
+                title: 'Software Engineer',
+                dateRange: 'Sep 2021 - Aug 2022',
+              }],
       description:
         'Seoul, South Korea. Led the internal R&D engineering team at an international logistics company, proposing and implementing new technologies. Consolidated infrastructure across teams from AWS, GCP, and Azure onto GCP, centralizing operations and enabling automated deployment pipelines. Led development of a Flutter-based beauty marketplace, establishing app foundations and owning TypeScript backend services and infrastructure designed for 300,000 daily users across Korea and the US. Designed order and warehouse management systems integrating Shopify, Naver SmartStore, and Coupang, and modernized Vue and JavaScript codebases to Vue 3 and TypeScript.',
       skills: [
@@ -315,8 +346,19 @@
     },
     {
       company: 'athenahealth',
-      title: 'Senior Member of Technical Staff',
       dateRange: 'Aug 2017 - Jul 2021',
+      roles: [
+        {
+
+          title: 'Senior Member of Technical Staff',
+          dateRange: 'Feb 2019 - Jul 2021',
+        },
+        {
+
+          title: 'Member of Technical Staff',
+          dateRange: 'Aug 2017 - Feb 2019',
+        },
+      ],
       description:
         'Watertown, MA, USA. Worked across Integration Services and Clinicals ePrescribing teams at an electronic medical record company. Contributed to the design, architecture, and implementation of e-prescribing modernization, replacing legacy workflows to support Surescripts’ NewSCRIPT standard. Served as long-term technical owner of a prescription-monitoring integration supporting approximately one million requests per day and reducing lookup time from 5–7 minutes to under 10 seconds. Migrated real-time prescription benefit checking from a Perl monolith to a Node.js microservice handling approximately six million requests per day. Served as Scrum Master for engineers based in the US and India.',
       skills: [
@@ -377,8 +419,13 @@
     },
     {
       company: 'Thales Visionix',
-      title: 'Associate Software Engineer',
       dateRange: 'Jul 2016 - Jul 2017',
+      roles: [
+        {
+          title: 'Associate Software Engineer',
+          dateRange: 'Jul 2016 - Jul 2017',
+        },
+      ],
       description:
         'Billerica, MA, USA. Developed software for motion trackers used in research, construction, and military applications. Designed and built a C# Unity plugin and demonstration application for trade shows. Owned the motion-tracker SDK, fixing embedded firmware issues, supporting legacy products, and updating the C++/Qt client and libraries for new product releases. Also provided technical support to customers.',
       skills: ['C', 'C++', 'C#', 'Qt', 'Unity'],
