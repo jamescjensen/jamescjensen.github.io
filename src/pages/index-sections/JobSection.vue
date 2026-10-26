@@ -133,7 +133,7 @@
         dateRange: 'Oct 2024 - July 2026',
       }],
       description:
-        'Seoul, South Korea. Glassdome builds industrial SaaS for manufacturing monitoring and product carbon footprints. Designed and developed Go backend systems, carbon footprint products, data-exchange integrations, access controls, and customer-facing APIs. Improved time-series query performance and database costs, and maintained production Kubernetes infrastructure on AWS with over 99.99% reported uptime over the past year. Assumed engineering leadership following the Director of Engineering’s departure, managing an 11-person engineering organization and reporting to the CEO. Owned roadmaps and delivery, working with domain experts, product, and design to translate complex requirements into technical designs and prioritized work.',
+        'Seoul, South Korea. Glassdome builds industrial SaaS for manufacturing monitoring and product carbon footprints. I designed and developed Go backend systems, carbon footprint products, data-exchange integrations, access controls, and customer-facing APIs. I improved time-series query performance and database costs, and maintained production Kubernetes infrastructure on AWS with over 99.99% reported uptime over the past year. Assumed engineering leadership following the Director of Engineering’s departure, managing an 11-person engineering organization and reporting to the CEO. Owned roadmaps and delivery, working with domain experts, product, and design to translate complex requirements into technical designs and prioritized work.',
       skills: [
         'Go',
         'AWS',
@@ -147,7 +147,7 @@
         {
           title: 'Customer Project',
           description:
-            'Coordinated delivery of customer requirements, collaborating with customer success and deployment teams to prioritize implementation. Implemented electronic signatures with token validation and configurable company- and group-level permissions.',
+            'Coordinated delivery of customer requirements, collaborating with customer success and deployment teams to prioritize implementation. Implemented electronic signatures with token validation and configurable company- and group-level permissions, and company-wide automated data backups.',
           skills: ['Go', 'AWS', 'Kubernetes'],
         },
         {
