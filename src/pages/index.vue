@@ -2,9 +2,9 @@
   <div class="portfolio-page">
     <div class="portfolio-content" :class="{ 'full-width': useFullWidth }">
       <introduction-section id="introduction-section" />
-      <v-divider class="section-divider" color="accent" />
+      <v-divider class="section-divider" color="primary" />
       <job-section id="job-section" />
-      <v-divider class="section-divider" color="accent" />
+      <v-divider class="section-divider" color="primary" />
       <education-section id="education-section" />
     </div>
 
@@ -13,7 +13,7 @@
       :aria-label="useFullWidth ? 'Use compact page width' : 'Use full page width'"
       :aria-pressed="useFullWidth"
       class="width-toggle"
-      color="accent"
+      color="primary"
       :icon="useFullWidth ? 'mdi-arrow-collapse-horizontal' : 'mdi-arrow-expand-horizontal'"
       :title="useFullWidth ? 'Use compact page width' : 'Use full page width'"
       @click="useFullWidth = !useFullWidth"

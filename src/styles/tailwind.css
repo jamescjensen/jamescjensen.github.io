@@ -8,14 +8,22 @@
   --font-mono: "Roboto Mono", monospace;
 
   --color-background: rgb(var(--v-theme-background));
+  --color-on-background: rgb(var(--v-theme-on-background));
   --color-surface: rgb(var(--v-theme-surface));
   --color-on-surface: rgb(var(--v-theme-on-surface));
 
   --color-primary: rgb(var(--v-theme-primary));
+  --color-on-primary: rgb(var(--v-theme-on-primary));
+  --color-secondary: rgb(var(--v-theme-secondary));
+  --color-on-secondary: rgb(var(--v-theme-on-secondary));
   --color-success: rgb(var(--v-theme-success));
+  --color-on-success: rgb(var(--v-theme-on-success));
   --color-info: rgb(var(--v-theme-info));
+  --color-on-info: rgb(var(--v-theme-on-info));
   --color-warning: rgb(var(--v-theme-warning));
+  --color-on-warning: rgb(var(--v-theme-on-warning));
   --color-error: rgb(var(--v-theme-error));
+  --color-on-error: rgb(var(--v-theme-on-error));
 
   --breakpoint-*: initial;
   --breakpoint-xs: 0px;

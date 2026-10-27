@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar
-      color="primary"
+      color="surface"
       :elevation="2"
       :extension-height="smAndUp ? 48 : 88"
       :height="50"

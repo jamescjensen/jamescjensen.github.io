@@ -52,7 +52,7 @@
 
 <style scoped>
 .priority-header {
-  background-color: rgb(var(--v-theme-accent));
-  color: rgb(var(--v-theme-on-accent));
+  background-color: rgb(var(--v-theme-primary));
+  color: rgb(var(--v-theme-on-primary));
 }
 </style>

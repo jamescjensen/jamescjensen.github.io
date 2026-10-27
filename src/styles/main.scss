@@ -9,17 +9,9 @@
   }
 
   a {
-    color: #1976d2;
+    color: rgb(var(--v-theme-secondary));
     text-decoration: underline;
     overflow-wrap: anywhere;
-  }
-
-  .v-theme--dark a, .site-footer a {
-    color: #99c8ff;
-  }
-
-  .v-theme--dark a:visited, .site-footer a:visited {
-    color: #61a9ff;
   }
 
   .portfolio-page { padding: 16px; }
@@ -45,7 +37,7 @@
     cursor: pointer;
   }
   .expansion-trigger > .v-icon { flex-shrink: 0; align-self: center; }
-  .expansion-trigger:focus-visible { outline: 2px solid rgb(var(--v-theme-accent)); outline-offset: 2px; }
+  .expansion-trigger:focus-visible { outline: 2px solid rgb(var(--v-theme-primary)); outline-offset: 2px; }
   .introduction-grid { display: grid; gap: 8px; align-items: center; }
   .portrait-container { display: flex; justify-content: center; }
   .projects-area { padding: 0 16px; }
