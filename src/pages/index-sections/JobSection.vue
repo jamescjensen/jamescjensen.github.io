@@ -35,7 +35,9 @@
 
           <div class="content-stack">
             <div>
-              {{ job.description }}
+              <p>{{ job.companyDescription }}</p>
+
+              <p>{{ job.roleDescription }}</p>
             </div>
 
             <div class="skill-list">
@@ -94,7 +96,8 @@
 
   type Job = {
     company: string
-    description: string
+    companyDescription: string
+    roleDescription: string
     roles: Role[]
     dateRange: string
     imageUrl?: string
@@ -132,8 +135,9 @@
         title: 'Mid-Level Backend Software Engineer',
         dateRange: 'Oct 2024 - July 2026',
       }],
-      description:
-        'Seoul, South Korea. Glassdome builds industrial SaaS for manufacturing monitoring and product carbon footprints. I designed and developed Go backend systems, carbon footprint products, data-exchange integrations, access controls, and customer-facing APIs. I improved time-series query performance and database costs, and maintained production Kubernetes infrastructure on AWS with over 99.99% reported uptime over the past year. Assumed engineering leadership following the Director of Engineering’s departure, managing an 11-person engineering organization and reporting to the CEO. Owned roadmaps and delivery, working with domain experts, product, and design to translate complex requirements into technical designs and prioritized work.',
+      companyDescription: 'Seoul, South Korea. Industrial software company, helping manufacturers monitor production and product carbon footprint. Main product is a SaaS product, with two customers choosing to deploy it on-premises instead. Go services deployed on AWS using Kubernetes and Helm, with gRPC APIs, PostgreSQL/TimescaleDB storage, and Python integration scripts.',
+      roleDescription:
+        'I designed and developed Go backend systems, carbon footprint products, data exchange integrations, access controls, and customer-facing APIs. I improved timeseries query performance and database costs, and maintained production Kubernetes infrastructure on AWS with over 99.99% reported uptime over the past year. Assumed engineering leadership following the Director of Engineering’s departure, managing an 11-person engineering organization and reporting to the CEO. Owned roadmaps and delivery, working with domain experts, product, and design to translate complex requirements into technical designs and prioritized work.',
       skills: [
         'Go',
         'AWS',
@@ -153,7 +157,7 @@
         {
           title: 'Certifications',
           description:
-            'Represented engineering for ISO/IEC 27001:2022 and SOC 2 Type II renewal audits and a new TISAX certification. ISO/IEC 27001:2022 renewal was achieved; the SOC 2 and TISAX processes remain ongoing.',
+            'Represented engineering for ISO/IEC 27001:2022 and SOC 2 Type II renewal audits and a new TISAX certification. ISO/IEC 27001:2022 and SOC2 renewals were achieved; TISAX processes remain ongoing.',
           skills: ['ISO/IEC 27001', 'SOC 2', 'TISAX'],
         },
         {
@@ -172,7 +176,7 @@
           title: 'Carbonnara',
           highPriority: true,
           description:
-            'Co-designed the architecture of a new carbon-footprint product, later assuming engineering leadership. Completed the initial core rebuild in three months against a six-month target. Led cross-functional planning with PCF consultants, product, and design. Built an MCP server for secure AI client integration, and spreadsheet-based LCA dataset ingestion with AI-assisted schema mapping.',
+            'Co-designed the architecture of a new carbon footprint product, later assuming engineering leadership. Completed the initial core rebuild in three months against a six month target. Led planning with PCF consultants, product, and design. Built an MCP server for secure AI client integration, and spreadsheet-based LCA dataset ingestion with AI-assisted schema mapping.',
           skills: ['Go', 'AWS', 'Kubernetes', 'MCP'],
         },
         {
@@ -264,8 +268,9 @@
                 title: 'Software Engineer',
                 dateRange: 'Sep 2021 - Aug 2022',
               }],
-      description:
-        'Seoul, South Korea. Led the internal R&D engineering team at an international logistics company, proposing and implementing new technologies. Consolidated infrastructure across teams from AWS, GCP, and Azure onto GCP, centralizing operations and enabling automated deployment pipelines. Led development of a Flutter-based beauty marketplace, establishing app foundations and owning TypeScript backend services and infrastructure designed for 300,000 daily users across Korea and the US. Designed order and warehouse management systems integrating Shopify, Naver SmartStore, and Coupang, and modernized Vue and JavaScript codebases to Vue 3 and TypeScript.',
+      companyDescription: 'Seoul, South Korea. MXN is an international logistics company.',
+      roleDescription:
+        'Led the internal R&D engineering team at an international logistics company, proposing and implementing new technologies. Consolidated infrastructure across teams from AWS, GCP, and Azure onto GCP, centralizing operations and enabling automated deployment pipelines. Led development of a Flutter-based beauty marketplace, establishing app foundations and owning TypeScript backend services and infrastructure designed for 300,000 daily users across Korea and the US. Designed order and warehouse management systems integrating Shopify, Naver SmartStore, and Coupang, and modernized Vue and JavaScript codebases to Vue 3 and TypeScript.',
       skills: [
         'TypeScript',
         'Node.js',
@@ -359,8 +364,9 @@
           dateRange: 'Aug 2017 - Feb 2019',
         },
       ],
-      description:
-        'Watertown, MA, USA. Worked across Integration Services and Clinicals ePrescribing teams at an electronic medical record company. Contributed to the design, architecture, and implementation of e-prescribing modernization, replacing legacy workflows to support Surescripts’ NewSCRIPT standard. Served as long-term technical owner of a prescription-monitoring integration supporting approximately one million requests per day and reducing lookup time from 5–7 minutes to under 10 seconds. Migrated real-time prescription benefit checking from a Perl monolith to a Node.js microservice handling approximately six million requests per day. Served as Scrum Master for engineers based in the US and India.',
+      companyDescription: 'Watertown, Massachusetts, USA. athenahealth creates an Electronic Medical Record (EMR) product, with work spanning the Integration Services and Clinicals ePrescribing teams. Monolith has a JavaScript frontend with a Perl backend. Microservices, deployed in AWS, had TypeScript backends, with React components for frontends.',
+      roleDescription:
+        'Worked across Integration Services and Clinicals ePrescribing teams at an electronic medical record company. Contributed to the design, architecture, and implementation of e-prescribing modernization, replacing legacy workflows to support Surescripts’ NewSCRIPT standard. Served as long-term technical owner of a prescription-monitoring integration supporting approximately one million requests per day and reducing lookup time from 5–7 minutes to under 10 seconds. Migrated real-time prescription benefit checking from a Perl monolith to a Node.js microservice handling approximately six million requests per day. Served as Scrum Master for engineers based in the US and India.',
       skills: [
         'JavaScript',
         'AWS',
@@ -426,8 +432,9 @@
           dateRange: 'Jul 2016 - Jul 2017',
         },
       ],
-      description:
-        'Billerica, MA, USA. Developed software for motion trackers used in research, construction, and military applications. Designed and built a C# Unity plugin and demonstration application for trade shows. Owned the motion-tracker SDK, fixing embedded firmware issues, supporting legacy products, and updating the C++/Qt client and libraries for new product releases. Also provided technical support to customers.',
+      companyDescription: 'Billerica, Massachusetts, USA. Company makes motion trackers for research, construction, and military use.',
+      roleDescription:
+        'Hybrid engineer and tech support role. Designed and built a C# Unity plugin and demonstration application for trade shows. Owned the motion-tracker SDK, fixing embedded firmware issues, supporting legacy products, and updating the C++/Qt client and libraries for new product releases.',
       skills: ['C', 'C++', 'C#', 'Qt', 'Unity'],
       projects: [
         {
